@@ -1,11 +1,17 @@
+<link rel="import" href="colors.html">
+<link rel="import" href="shapes.html">
 <!--
 `materializecss-styles`
 Some styling helpers from the materializecss project
 
 @demo demo/index.html
 -->
-<link rel="import" href="colors.html">
-<link rel="import" href="shapes.html">
+<dom-module id="materializecss-styles">
+  <template>
+    <style include="materializecss-styles-colors"></style>
+    <style include="materializecss-styles-shapes"></style>
+  </template>
+</dom-module>
 <script>
   // ensure HAXBehaviors exists globally before acting on them
   window.MaterializeCSSBehaviors = window.MaterializeCSSBehaviors || {};
